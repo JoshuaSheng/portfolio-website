@@ -1,0 +1,64 @@
+@media screen and (max-width: 992px) {
+  .homepage-title {
+    font-size: 15vw;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.icons a{
+  color: white;
+}
+
+.homepage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.homepage-content {
+  color: white;
+  z-index: 1;
+  margin: auto;
+}
+
+.homepage-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15vh;
+}
+
+.homepage-break {
+  background-color: white;
+  margin: 0;
+}
+
+.home-bg {
+  display: block;
+  position: absolute;
+}
+
+.content-block {
+  padding-top: 1vh;
+  background-color: white;
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.flipcard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  margin-top: 1vh;
+  height: 50vh;
+}
