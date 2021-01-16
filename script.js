@@ -26,3 +26,20 @@ function fall() {
 }
 
 setInterval(fall, 33)
+
+setTimeout(() => {
+  let homepage = document.querySelector(".homepage-content")
+  homepage.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+}, window.innerHeight*33/font_size)
+
+flipcard_dom = document.querySelectorAll(".flipcard-front, .flipcard-back")
+
+for (i = 0; i < flipcard_dom.length; i++) {
+  flipcard_dom[i].addEventListener("click", (e) => {
+    inner = e.target
+    while (!inner.classList.contains("flipcard-inner")) {
+      inner = inner.parentElement
+    }
+    inner.classList.toggle("flip")
+  })
+}

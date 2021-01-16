@@ -16,26 +16,54 @@
         <div class="homepage-title">Joshua Sheng</div>
         <hr class="homepage-break">
         <div class="icons">
-          <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
-          <a href="#"><i class="fa fa-github fa-lg"></i></a>
-          <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-          <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa fa-envelope fa-2x"></i></a>
+          <a href="#"><i class="fa fa-github fa-2x"></i></a>
+          <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
         </div>
         <div class="resume-container">
-          <a href="#">asd</a>
+          <a href="#" class = "dlbutton">Download Resume</a>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-    <div class="content-block aboutme">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1>About Me</h1>
-            <hr>
+    <div class="main-content">
+      <div class="content-block aboutme">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1>About Me</h1>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card bg-light personal-info">
+                <img class="img-fluid profile-img" src="github_logo.png">
+                <h3>Joshua Sheng</h3>
+                <p>CFM Student at UWaterloo</p>
+                <p>2020-2025</p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <h2>Biography</h2>
+              <p> Hi, my name is Joshua Sheng! I'm a Computing and Financial
+                Management Student in my 1B term at the University of Waterloo.
+                I enjoy making stuff, learning new languages, and getting
+                better at coding in general. I'm a mostly self-taught
+                programmer, and I pick up new languages pretty quickly.</p>
+
+              <p>Outside of computer programming, I also enjoy running, playing the violin,
+              travelling to new places, and reading in my spare time. I'm also
+              learning about the finance industry, a field I want to explore
+              in the future.<p>
+
+              <p>I think while I might not be the most experienced, I work hard
+              and learn quickly without a lot of handholding, in any environment.
+              I look forward to working with you in the future!</p>
+            </div>
           </div>
         </div>
-    </div>
+      </div>
     <div class="content-block projects">
       <div class="container">
         <div class="row">
@@ -44,8 +72,52 @@
             <hr>
           </div>
         </div>
-        <div class="carousel slide" data-ride="carousel">
-
+        <div class="row">
+          <div id="project-carousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#project-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#project-carousel" data-slide-to="1"></li>
+              <li data-target="#project-carousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img class="w-100 img-fluid" src="blackjack.jpg" alt="First slide">
+                <div class="carousel-caption d-block caption">
+                  <h5>Online BlackJack</h5>
+                  <p>BlackJack game built purely with HTML, CSS, and JS. Code
+                  documented with JSDoc.</p>
+                  <h6>Tech Stack: HTML, CSS, JS</h6>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img class="w-100 img-fluid" src="stock-ticker-board.jpg" alt="Second slide">
+                <div class="carousel-caption d-block caption">
+                  <h5>Securities Master Database</h5>
+                  <p>Database containing daily OHLC data for S&P 500 Companies
+                  for the past 10 years stored on a local mysql server. Uses Matplotlib to visualize data.</p>
+                  <h6>Tech Stack: MySQL, Python, yfinance, Matplotlib, PyMySQL</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="w-100 img-fluid" src="Portfolio.png" alt="Third slide">
+                <div class="carousel-caption d-block caption">
+                  <h5>Portfolio Website</h5>
+                  <p>This website was built mainly with Bootstrap, using HTML,
+                    CSS, and a little bit of JavaScript. It is fully responsive
+                    and built mobile-first.</p>
+                  <h6>Tech Stack: HTML, CSS, JavaScript, Bootstrap</h6>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#project-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#project-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -54,27 +126,87 @@
         <div class="row">
           <div class="col-md-12">
             <h1>Skills</h1>
+            <p>(Try clicking the cards!)</p>
             <hr>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4">
             <div class="flipcard">
-              <h1>Frontend</h1>
+              <div class="flipcard-inner">
+                <div class="flipcard-front frontendimg">
+                  <h1>Frontend</h1>
+                </div>
+                <div class="flipcard-back bg-light">
+                  <div class="card">
+                    <h2>Languages</h2>
+                    <ul>
+                      <li>HTML</li>
+                      <li>CSS</li>
+                      <li>JavaScript</li>
+                    </ul>
+                  </div>
+                  <div class="card technologies">
+                    <h2>Technologies</h2>
+                    <ul>
+                      <li>Bootstrap</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="flipcard">
-              <h1>Backend</h1>
+              <div class="flipcard-inner">
+                <div class="flipcard-front backendimg">
+                  <h2>Backend</h2>
+                </div>
+                <div class="flipcard-back">
+                  <div class="card">
+                    <h2>Languages</h2>
+                    <ul>
+                      <li>Python</li>
+                      <li>SQL</li>
+                    </ul>
+                  </div>
+                  <div class="card technologies">
+                    <h2>Technologies</h2>
+                    <ul>
+                      <li>MySQL</li>
+                      <li>Pandas</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="flipcard">
-              <h1>Other</h1>
+              <div class="flipcard-inner">
+                <div class="flipcard-front otherimg">
+                  <h1>Other</h1>
+                </div>
+                <div class="flipcard-back">
+                  <div class="card">
+                    <h2>Skills</h2>
+                    <ul>
+                      <li>Git and Github</li>
+                      <li>Basic Excel Skills</li>
+                      <li>MS Office</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
